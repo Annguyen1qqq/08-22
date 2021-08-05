@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Countup - VeeNut</title>
+	<style>
+
+	html, body
+	{
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		color: pink;
+		background-color: ;
+	
+	}
+	.flex {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center; /* align items in Main Axis */
+		align-items: center; /* align items in Cross Axis */
+		align-content: center; /* Extra space in Cross Axis */
+	}
+	.text-center {
+		text-align: center;
+	}
+	
+	</style>
+</head>
+<body>
+<div class="flex">
+	<h1 class="text-center">
+		<strong class="year"></strong> năm
+		<strong class="month"></strong> tháng
+		<strong class="day"></strong> ngày
+	</h1>
+	<h2 class="text-center">
+		<strong class="hour"></strong> giờ
+		<strong class="minute"></strong> phút
+		<strong class="second"></strong> giây
+	</h2>
+
+</div>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script>
+$(function() {
+	var debug = $('.debug');
+	var year = $('.year');
+	var month = $('.month');
+	var day = $('.day');
+	var hour = $('.hour');
+	var minute = $('.minute');
+	var second = $('.second');
+	var startDate = moment("2021-02-22T00:00:00+07:00").utcOffset(7);
+
+	setInterval(function() {
+		var diff = moment.duration(moment().diff(startDate));
+		year.html(diff.years());
+		month.html(diff.months());
+		day.html(diff.days());
+		hour.html(diff.hours());
+		minute.html(diff.minutes());
+		second.html(diff.seconds());
+	}, 1000);
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+html {
+    background-image: url("https://wallpaperaccess.com/full/112404.png");
+	background-size: cover;
+	background-attachment: fixed;
+	user-select: none;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body {
+	background-image: url ("https://wallpaperaccess.com/full/112404.png");
+	background-size: cover;
+	background-attachment: fixed;
+	
+
+}
+.content {
+	background: white;
+	width:50%;
+	padding: 40px;
+	margin: 100px auto;
+	font-family: calibri;
+}
+p{
+	font-size: 25px;
+	color:black;
+}
+a {
+  color: orange;
+  text-decoration: none;
+  font-family: San Fansico;
+}
+#main-info {
+    font-family: "San Fansico";
+    color: #ffc0cb;
+}
+.button {
+ 
+  border: none;
+  color: pink;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+
+#navtext {
+    color: #e4e4e4;
+    font-family: 'Aldrich';
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+}
+
+.text {
+	color: pink;
+	font-family: San Fansico;
+	font-size: 30px;
+}
+
+.oh {
+	color:pink;
+	font-family: San fansico;
+	
+}
+
+.hinh {
+	align-items: center;
+}
+
+iframe {
+	border: none;
+}
+#ntext {
+	font-size:75px;
+	align: center;
+
+}
